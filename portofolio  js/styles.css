@@ -1,0 +1,23 @@
+.container {
+  margin-top: 50px;
+  box-shadow: 0 0 7px black;
+  padding: 0 15px 0 15px;
+  background-color: white;
+}
+
+.body {
+  background-color: #efefee;
+}
+
+.navbar-nav .nav-link:hover {
+  color: black;
+}
+
+.features {
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  display: flex;
+  padding: 50px 20px;
+  justify-content: space-around;
+}

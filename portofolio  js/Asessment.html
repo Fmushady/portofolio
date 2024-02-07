@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+    <script src="styles.css" defer></script>
+    <title>Challenge</title>
+  </head>
+  <body class="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Inventory</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1 mt-5" style="margin-left: 150px">
+          <img src="img1.JPG" alt="img1" />
+        </div>
+        <div class="col-4 m-5">
+          <h2 id="name">Muhammad Furqan Mushady</h2>
+          <p id="role">Front End Designer</p>
+          <button
+            type="button"
+            class="btn btn-primary mt-5"
+            onclick="editProfile()"
+          >
+            Edit
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-success mt-5 ml-5"
+            onclick="viewResume()"
+          >
+            Resume
+          </button>
+        </div>
+        <div class="col-4 mt-5">
+          <dl class="row">
+            <dt class="col-sm-4 col-centered">Availability</dt>
+            <dd class="col-sm-8 col-centered" id="availability">Fulltime</dd>
+            <dt class="col-sm-4">Usia</dt>
+            <dd class="col-sm-8" id="usia">23</dd>
+            <dt class="col-sm-4">Lokasi</dt>
+            <dd class="col-sm-8" id="lokasi">BSD</dd>
+            <dt class="col-sm-4">Pengalaman</dt>
+            <dd class="col-sm-8" id="pengalaman">1</dd>
+            <dt class="col-sm-4">Email</dt>
+            <dd class="col-sm-8" id="email">furqanmushady1@gmail.com</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="container px-5 mt-5 p-5" id="form" style="visibility: hidden">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nameInput" />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Role</label>
+        <input type="text" class="form-control" id="roleInput" />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label"
+          >Availability</label
+        >
+        <input type="text" class="form-control" id="availabilityInput" />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Age</label>
+        <input type="text" class="form-control" id="usiaInput" />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Lokasi</label>
+        <input type="text" class="form-control" id="lokasiInput" />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label"
+          >Pengalaman</label
+        >
+        <input type="text" class="form-control" id="pengalamanInput" />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Email</label>
+        <input type="text" class="form-control" id="emailInput" />
+      </div>
+
+      <button
+        type="button"
+        class="w-100 mb-3 btn btn-success"
+        onclick="updateProfile()"
+      >
+        Success
+      </button>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
